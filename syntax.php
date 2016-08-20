@@ -25,10 +25,10 @@ class syntax_plugin_selfmeasurement extends DokuWiki_Syntax_Plugin {
     function getInfo(){
         return array(
             'author' => 'Eric Maeker',
-            'email'  => 'eric.maeker@gmail.com',
+            'email'  => 'eric@maeker.fr',
             'date'   => '2013-02-26',
             'name'   => 'selfmeasurement',
-            'desc'   => 'Self Measurement of blood pressure assessment',
+            'desc'   => 'Medical plugin to help users to correctly monitor their blood pressure.',
             'url'    => 'http://www.dokuwiki.org/wiki:plugins',
         );
     }
@@ -52,10 +52,7 @@ class syntax_plugin_selfmeasurement extends DokuWiki_Syntax_Plugin {
      *     {{selfmeasurement}} 
      */
     public function connectTo($mode) {
-        // $this->Lexer->addSpecialPattern('\[NOW\]',$mode,'plugin_now');
         $this->Lexer->addSpecialPattern('\{\{selfmeasurement\}\}',$mode,'plugin_selfmeasurement');
-        // $this->Lexer->addSpecialPattern('\{\{selfmeasurement>[^}]*\}\}',$mode,'plugin_selfmeasurement');
-        // $this->Lexer->addEntryPattern('<FIXME>',$mode,'plugin_selfmeasurement');
     }
 
     public function handle($match, $state, $pos, &$handler) {
