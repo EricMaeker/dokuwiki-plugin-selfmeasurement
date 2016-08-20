@@ -5,16 +5,16 @@ description: Self measurement blood pressure form
 author     : Eric Maeker, MD
 email      : eric.maeker@gmail.com
 type       : syntax
-lastupdate : 2013-02-26
+lastupdate : 2016-08-20
 compatible : Adora Belle
 depends    : 
 conflicts  : 
 similar    : 
 tags       : form, medical, blood_pressure
 
-downloadurl: http://freemedforms.googlecode.com/files/selfmeasurement-1.0.zip
-bugtracker : http://code.google.com/p/freemedforms/issues/list
-sourcerepo : http://code.google.com/p/freemedforms/source
+downloadurl: https://github.com/EricMaeker/dokuwiki-plugin-selfmeasurement/archive/master.zip
+bugtracker : https://github.com/EricMaeker/dokuwiki-plugin-selfmeasurement
+sourcerepo : https://github.com/EricMaeker/dokuwiki-plugin-selfmeasurement
 donationurl: 
 ----
 
@@ -51,6 +51,8 @@ You can configure the email where to send the reports in the dokuwiki configurat
 
 === Change Log ===
 
+  * **2016-08-20**
+    * Uploading source to github
   * **2013-02-26**
     * Initial release - 1.0
 
