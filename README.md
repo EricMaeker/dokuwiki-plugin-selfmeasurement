@@ -1,4 +1,4 @@
-selfmeasurement Plugin for DokuWiki
+# selfmeasurement Plugin for DokuWiki
 
 Medical plugin to help users to correctly monitor their blood pressure.
 
