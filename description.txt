@@ -1,0 +1,72 @@
+====== selfmeasurement Plugin ======
+
+---- plugin ----
+description: Self measurement blood pressure form
+author     : Eric Maeker, MD
+email      : eric.maeker@gmail.com
+type       : syntax
+lastupdate : 2013-02-26
+compatible : Adora Belle
+depends    : 
+conflicts  : 
+similar    : 
+tags       : form, medical, blood_pressure
+
+downloadurl: http://freemedforms.googlecode.com/files/selfmeasurement-1.0.zip
+bugtracker : http://code.google.com/p/freemedforms/issues/list
+sourcerepo : http://code.google.com/p/freemedforms/source
+donationurl: 
+----
+
+===== Installation =====
+
+This plugin is part of the [[http://freemedforms.com|medical FreeMedForms project]].
+Install the plugin using the [[plugin:plugin|Plugin Manager]] and the download URL above, which points to latest version of the plugin. Refer to [[:Plugins]] on how to install plugins manually.
+
+===== Examples/Usage =====
+
+Code:
+
+  {{selfmeasurement}}
+
+Adds a complet blood pressure self-measurement form. Allow user to enter his blood pressure values, clear the form and send the form to the configurated email account (see configuration).
+
+When user validate the form, a report is generated and sent to the configurated email. The report contains all the blood pressure values, all the averages and the main result. It is sent as a textual mail, including two attached files (an HTML version and the .txt file).
+
+===== Syntax =====
+
+Code:
+
+  {{selfmeasurement}}
+
+
+===== Configuration and Settings =====
+
+You can configure the email where to send the reports in the dokuwiki configuration manager.
+
+===== Development =====
+
+  * Source code is released under the BSD-3 clause license
+  * Without any warranty
+
+=== Change Log ===
+
+  * **2013-02-26**
+    * Initial release - 1.0
+
+=== Known Bugs and Issues ===
+
+  * The attached textual file is not correctly encoded in UTF8 ?
+  * Missing translations
+
+  * TODO:
+    * manage languages in the form, the report and the script
+    * remove some magic numbers in the syntax.php
+
+===== FAQ =====
+
+  * Discuss about this plugin on the FreeMedForms project mailing list: <freemedforms@googlegroups.com>
+
+===== Discussion =====
+
+
